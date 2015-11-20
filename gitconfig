@@ -1,0 +1,17 @@
+[user]
+	name = Ben Homer
+	email = bhomer77@gmail.com
+[push]
+	default = matching
+[alias]
+    # some adapted from http://gitolite.com/tips-1.html
+    
+    s       = status -s -b
+    stat    = status -s -b
+    
+    ci  = commit -v
+    co  = checkout
+
+    d   = diff -C
+
+
