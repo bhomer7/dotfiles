@@ -15,12 +15,12 @@ set mouse=a
 nnoremap ; :
 vnoremap ; :
 vnoremap $ $h
-nnoremap scrollwheelup 4k
-nnoremap scrollwheeldown 4j
-vnoremap scrollwheelup 4k
-vnoremap scrollwheeldown 4j
-inoremap scrollwheelup <ESC> 4ki
-inoremap scrollwheeldown <ESC> 4ji
+"nnoremap <scrollwheelup> 4k
+"nnoremap <scrollwheeldown> 4j
+"vnoremap <scrollwheelup> 4k
+"vnoremap <scrollwheeldown> 4j
+"inoremap <scrollwheelup> <ESC> 4ki
+"inoremap <scrollwheeldown> <ESC> 4ji
 
 
 " Line Numbering
@@ -40,8 +40,6 @@ filetype plugin on
 
 " Make text files autowrap at 80 characters
 au BufEnter,BufNew *.txt setlocal textwidth=80
-" Make latex files autowrap at 80 characters
-au FileType tex setlocal textwidth=80
 
 """ Basic Syntax Highlighting
 syntax on
