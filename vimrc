@@ -44,9 +44,10 @@ au BufEnter,BufNew *.txt setlocal textwidth=80
 """ Basic Syntax Highlighting
 syntax on
 highlight Comment ctermfg=36
+highlight String ctermfg=202
+highlight Number ctermfg=172
 highlight ColorColumn ctermbg=234
 highlight Directory ctermfg=81
-
 
 """ Plugins
 " Plugin manager
