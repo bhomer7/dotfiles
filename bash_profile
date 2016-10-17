@@ -1,6 +1,7 @@
 
-# Do this only on arya
-if [ `hostname` = "arya" ]
+export THISHOST=`hostname`
+
+if [ $THISHOST = "arya" ]
 then
 . ~/.nvm/nvm.sh
 nvm use 0.12.0

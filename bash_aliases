@@ -29,9 +29,23 @@ alias cs1="ssh bah150230@cs1.utdallas.edu -i ~/.ssh/cs1"
 
 # Shortening
 alias py="python $@"
+if [ $THISHOST = "carbon" ]
+then
+alias carlson="lp -d carlson -o size=letter -o fit-to-page"
+fi
 
 # Programs
+if [ $THISHOST != "cslinux1.utdallas.edu" ]
+then
 alias vim="nvim $@"
+fi
+if [ $THISHOST = "arya" ]
+then
 alias xmage="java -jar ~/Documents/Games/XMage/XMageLauncher-0.3.8.jar"
 alias mars="java -jar ~/Applications/Mars4_5.jar $@"
 alias combinepdfs="open ~/Applications/Combine\ Pdfs.app"
+fi
+if [ $THISHOST = "carbon" ]
+then
+alias ff="firefox"
+fi
