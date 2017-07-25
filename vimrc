@@ -21,6 +21,15 @@ vnoremap $ $h
 "vnoremap <scrollwheeldown> 4j
 "inoremap <scrollwheelup> <ESC> 4ki
 "inoremap <scrollwheeldown> <ESC> 4ji
+tnoremap ∑ <C-\><C-n>
+tnoremap ˙ <C-\><C-n><C-w>h
+tnoremap ∆ <C-\><C-n><C-w>j
+tnoremap ˚ <C-\><C-n><C-w>k
+tnoremap ¬ <C-\><C-n><C-w>l
+nnoremap ˙ <C-w>h
+nnoremap ∆ <C-w>j
+nnoremap ˚ <C-w>k
+nnoremap ¬ <C-w>l
 
 
 " Line Numbering
@@ -28,9 +37,9 @@ set number
 
 function! NumberToggle()
     if(&relativenumber == 1)
-    set number
+        set relativenumber!
     else
-    set relativenumber
+        set relativenumber
     endif
 endfunc
 
@@ -56,6 +65,8 @@ call plug#begin()
     Plug 'bling/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'frankier/neovim-colors-solarized-truecolor-only'
+    Plug 'wesQ3/vim-windowswap'
+    Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " Airline Config
