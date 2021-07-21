@@ -57,6 +57,10 @@ highlight String ctermfg=202
 highlight Number ctermfg=172
 highlight ColorColumn ctermbg=234
 highlight Directory ctermfg=81
+highlight Title ctermfg=134
+highlight Special ctermfg=134
+highlight PreProc ctermfg=134
+highlight Underlined ctermfg=134
 
 """ Plugins
 " Plugin manager
